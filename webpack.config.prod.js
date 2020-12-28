@@ -43,7 +43,10 @@ export default {
         minifyCSS: true,
         minifyURLs: true
       },
-      inject: true
+      inject: true,
+      // Properties you define here are available in index.html
+      // using htmlWebpackPlugin.options.varName
+      rollbarToken: 'c8fae4bf43234131906e70361b7a7b99'
     }),
     // Eliminate duplicate packages when generating bundle
     new webpack.optimize.DedupePlugin(),
